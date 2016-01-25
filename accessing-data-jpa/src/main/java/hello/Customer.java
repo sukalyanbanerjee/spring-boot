@@ -21,11 +21,21 @@ public class Customer {
         this.lastName = lastName;
     }
 
+	public long getId() {
+		return id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+    
     @Override
     public String toString() {
-        return String.format(
-                "Customer[id=%d, firstName='%s', lastName='%s']",
-                id, firstName, lastName);
+        return "{\"id\":" + id +",\"firstName\":" + firstName + ",\"lastName\":" + lastName + "}";
     }
 
 }
